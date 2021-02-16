@@ -1,0 +1,23 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+$fontPrimary: "Releway", "sans-serif";
+$secondaryFonts: "Open Sans", "sans-serif";
+
+//colors
+
+$darkBlue: hsl(217, 28%, 15%);
+$darkBlueMain: hsl(218, 28%, 13%);
+$darkBlueFooter:  hsl(216, 53%, 9%);
+$darkBlueTest: hsl(219, 30%, 18%);
+
+$cyan:hsl(176, 68%, 64%);
+$blue:hsl(198, 60%, 50%);
+$red: hsl(0, 100%, 63%);
+$white: hsl(0, 0%, 100%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
