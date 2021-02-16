@@ -1,7 +1,7 @@
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-$fontPrimary: "Releway", "sans-serif";
+$fontPrimary: "Raleway", "sans-serif";
 $secondaryFonts: "Open Sans", "sans-serif";
 
 //colors
@@ -20,4 +20,92 @@ $white: hsl(0, 0%, 100%);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body {
+    font-family: $fontPrimary;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hello {
+    background-color: $darkBlue;
+    min-height: 100vh;
+    width: 100%;
+    color: $white;
+    padding: 0 2rem;
+
+    background-image:  url("../images/bg-curvy-mobile.svg");
+    background-position: center;
+    border-image-width: 100%;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0;
+    &__logo  {
+        img {
+            max-width: 70%;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                fill: $red;
+            }
+        }
+     
+    }
+
+    &__list {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        &__item {
+            margin-left: 25px;
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+.started {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2.5rem;
+    &__hero {
+        margin: 0 auto;
+    }
+    &__description {
+        margin: 1.5rem auto;
+    }
+}
+
+.laptop {
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+.btn {
+    padding: 15px 40px;
+    background-color: $blue;
+    color: $white;
+    font-family: $fontPrimary;
+    border-radius: 25px;
+    font-weight: bold;
 }
